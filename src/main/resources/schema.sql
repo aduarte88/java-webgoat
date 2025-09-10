@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255),
+  name VARCHAR(255)
+);
+
+DROP TABLE IF EXISTS pii;
+CREATE TABLE pii (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  ssn VARCHAR(64),
+  credit_card_number VARCHAR(64),
+  email VARCHAR(255)
+);
